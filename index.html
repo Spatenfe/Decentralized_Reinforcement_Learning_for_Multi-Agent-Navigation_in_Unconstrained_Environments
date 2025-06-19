@@ -37,21 +37,6 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousels = bulmaCarousel.attach('.results-carousel', {
-      autoplay: false,
-      loop: true
-    });
-
-    // Explicitly stop autoplay in case it's triggered later
-    carousels.forEach(carousel => {
-      carousel.pause(); // this kills autoplay even after "next" click
-    });
-  });
-  </script>
-
 </head>
 <body>
 
@@ -119,7 +104,7 @@
       <h2 class="title is-3">
         Results of the Deep Reinforcement Learning Approach: 20 Vehicles and 4 Obstacles
       </h2>
-      <div class="carousel results-carousel" data-autoplay=false>
+      <div class="carousel results-carousel" data-autoplay="false">
         <div class="item">
           <h2 class="subtitle has-text-centered">
             Scenario 1:
