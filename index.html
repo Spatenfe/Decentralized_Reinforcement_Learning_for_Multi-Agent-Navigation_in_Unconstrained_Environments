@@ -38,12 +38,20 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
-    <script>
-    bulmaCarousel.attach('.results-carousel', {
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousels = bulmaCarousel.attach('.results-carousel', {
       autoplay: false,
-      loop: true, // optional, enables manual looping
+      loop: true
     });
+
+    // Explicitly stop autoplay in case it's triggered later
+    carousels.forEach(carousel => {
+      carousel.pause(); // this kills autoplay even after "next" click
+    });
+  });
   </script>
+
 </head>
 <body>
 
