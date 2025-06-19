@@ -6,6 +6,11 @@
   flex-wrap: nowrap; /* Prevent wrapping on larger screens */
 }
 
+.double_img img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .double_img {
     flex-wrap: wrap; /* Allow wrapping on small screens */
