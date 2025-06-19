@@ -3,7 +3,13 @@
   justify-content: center;  /* Centers horizontally */
   align-items: center;
   gap: 1rem;                /* Adds space between images */
-  flex-wrap: wrap; 
+  flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+}
+
+@media (max-width: 768px) {
+  .double_img {
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+  }
 }
 
 body {
