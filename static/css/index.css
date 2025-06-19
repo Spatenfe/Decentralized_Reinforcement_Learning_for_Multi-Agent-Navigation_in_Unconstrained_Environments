@@ -3,22 +3,20 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow: hidden;
+  flex-wrap: nowrap;   /* stay side‑by‑side on desktop */
 }
 
 .double_img img {
-  max-width: 100%;
-  width: 45%;
+  flex: 0 0 calc(50% - 0.5rem);  /* two equal columns */
+  max-width: calc(50% - 0.5rem); /* never exceed its half */
   height: auto;
-  object-fit: contain;
+  object-fit: contain;           /* no cropping */
 }
 
+/* Optional: let them wrap only on phones */
 @media (max-width: 768px) {
-  .double_img {
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-  }
+  .double_img { flex-wrap: wrap; }
+  .double_img img { max-width: 100%; flex: 0 0 100%; }
 }
 
 body {
