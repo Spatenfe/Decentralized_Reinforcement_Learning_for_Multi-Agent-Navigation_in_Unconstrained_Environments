@@ -7,8 +7,8 @@
 }
 
 .double_img img {
-  max-width: auto;
-  height: 100%;
+  max-width: 45%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
