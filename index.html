@@ -4,27 +4,21 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Efficient Obstacle Avoidance of Vehicles using Reinforcement Learning">
-  <meta property="og:title" content="Efficient Obstacle Avoidance of Vehicles using Reinforcement Learning"/>
-  <meta property="og:description" content="Efficient Obstacle Avoidance of Vehicles using Reinforcement Learning"/>
-  <meta property="og:url" content="https://github.com/Spatenfe/Efficient-Obstacle-Avoidance-of-Vehicles-using-Reinforcement-Learning"/>
+  <meta name="description" content="Decentralized Reinforcement Learning for Multi-Agent Navigation in Unconstrained Environments">
+  <meta property="og:title" content="Decentralized Reinforcement Learning for Multi-Agent Navigation in Unconstrained Environments"/>
+  <meta property="og:description" content="Decentralized Reinforcement Learning for Multi-Agent Navigation in Unconstrained Environments"/>
+  <meta property="og:url" content="https://github.com/Spatenfe/Decentralized_Reinforcement_Learning_for_Multi-Agent-Navigation_in_Unconstrained_Environments"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <!-- <meta property="og:image" content="images/overview.jpg" /> -->
   <!-- <meta property="og:image:width" content="1245"/> -->
   <!-- <meta property="og:image:height" content="562"/> -->
 
-
-  <!-- <meta name="twitter:title" content="Multi Agent Navigation in Unconstrained Environments using a Centralized Attention based Graphical Neural Network Controller"> -->
-  <!-- <meta name="twitter:description" content="Multi Agent Navigation using a U-Attention based Graphical Neural Network"> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <!-- <meta name="twitter:image" content="images/overview.jpg"> -->
-  <!-- <meta name="twitter:card" content="summary_large_image"> -->
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Multi-Agent Navigation, Multi-Vehicle Environment, Reinforcement Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Efficient Obstacle Avoidance of Vehicles using Reinforcement Learning</title>
+  <title>Decentralized Reinforcement Learning for Multi-Agent Navigation in Unconstrained Environments</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.icon">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,15 +46,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Efficient Obstacle Avoidance of Vehicles using Reinforcement Learning</h1>
+            <h1 class="title is-1 publication-title">Decentralized Reinforcement Learning for Multi-Agent Navigation in Unconstrained Environments</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://github.com/Spatenfe" target="_blank">Felix Förster*<sup>1</sup></a>,</span>
+                <a href="https://github.com/Spatenfe" target="_blank">Felix Förster</a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Spatenfe" target="_blank">Qadeer Khan</a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Spatenfe" target="_blank">Daniel Cremers</a></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Technical University of Munich<sup>1</sup></span>
+              <span class="author-block">Technical University of Munich, Munich Center for Machine Learning</span>
             </div>
           </div>
         </div>
@@ -74,10 +72,10 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Preliminary Project Page</h2>
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This is a preliminary project page that only contains some video examples. More details will be provided in case of a publication. All samples shown are part of the test dataset. They are unseen for the model and are not hand-selected for this preview. The last visualization is a custom set scenario containing the first-person view and reward plots.
+            Supervised learning has demonstrated to be an effective strategy in training neural networks for vehicle navigation. However, it requires labeled data, which may not be available when a large number of vehicles need to be controlled simultaneously. In contrast, Deep Reinforcement Learning (DRL) circumvents the necessity for ground truth labels through environmental exploration. However, most concurrent DRL approaches either tend to operate in the discrete action/state space or do not consider the vehicle kinematics. In this paper, we use DRL to control multiple vehicles while also considering their kinematics. The task is for all the vehicles to reach their desired destination/target while avoiding collisions with each other or static obstacles in an unconstrained environment. For this, we propose a decentralized Proximal Policy Optimization (PPO) based DRL agent that independently provides control commands to each vehicle. The agent is based on two separate PPO models. The first is used to drive each vehicle to the proximity of its target. Once within the target's proximity, the second model is used to park that vehicle at the correct position and orientation. The decentralized nature of the algorithm allows each agent to rely only on information about its current state and target, along with details regarding the closest obstacle/agent. By scaling this approach to all vehicles, simultaneous navigation of multiple vehicles can be achieved. Experimental results show a collective strategy that allows consistent results across a wide range of scenarios while scaling to situations with up to 20 vehicles and 12 stationary obstacles.
           </p>
         </div>
       </div>
