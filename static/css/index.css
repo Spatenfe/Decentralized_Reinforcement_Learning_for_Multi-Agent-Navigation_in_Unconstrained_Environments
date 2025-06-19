@@ -1,7 +1,9 @@
 .double_img {
-  display:flex;
-  width: 50%;
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
   align-items: center;
+  gap: 1rem;                /* Adds space between images */
+  flex-wrap: wrap; 
 }
 
 body {
