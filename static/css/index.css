@@ -13,10 +13,23 @@
   object-fit: contain;           /* no cropping */
 }
 
+.single_img {
+  display: flex;
+  justify-content: center;
+}
+
+.single_img img {
+      width: 100%;
+      max-width: 50%;
+      height: auto;
+      display: block;
+}
+
 /* Optional: let them wrap only on phones */
 @media (max-width: 768px) {
   .double_img { flex-wrap: wrap; }
   .double_img img { max-width: 100%; flex: 0 0 100%; }
+  .single_img img {max-width: 100%;}
 }
 
 body {
